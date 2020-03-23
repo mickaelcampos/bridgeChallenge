@@ -33,7 +33,7 @@ const StyledForm = styled.form`
     background: #292929;
     border-radius: 2px;
     padding: 15px 20px;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
     color: #fff;
     transition: background 0.5s;

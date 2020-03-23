@@ -2,6 +2,8 @@ import { Router } from 'express';
 
 const routes = new Router();
 
+let requestId = 0; // this is used for 'generate' a id for result
+
 function checkIsPrime(req, res, next) {
 
   const isPrime = (num) => {
@@ -33,7 +35,10 @@ function getDivisors(req, res, next) {
 
 routes.get('/number/:value', checkIsPrime, getDivisors, (req, res) => {
 
+  req.id = requestId++;
   const result = {
+    id: req.id,
+    searchValue: req.params.value,
     isPrime: req.isPrime,
     divisors: req.divisors
   }

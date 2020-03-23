@@ -12,7 +12,8 @@ export default function Form({ onSubmit }) {
     await onSubmit({
       value_typed
     })
-    setValueTyped(' ');
+
+    // setValueTyped(0);
   }
 
   return (

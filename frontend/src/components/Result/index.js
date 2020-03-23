@@ -7,8 +7,9 @@ export default function Result({ res }) {
   function renderResult() {
     return (
       <StyledResult>
-        <strong>{(res.isPrime) ? 'É Primo!' : 'Não é Primo!'}</strong>
-        <p><strong>Divisores:</strong>{res.divisors.join(', ')}</p>
+        <strong>{res.searchValue} {(res.isPrime) ? 'é Primo!' : 'não é Primo!'}</strong>
+        <br/>
+        <p>Divisores: {res.divisors.join(', ')}</p>
       </StyledResult>
     )
   }

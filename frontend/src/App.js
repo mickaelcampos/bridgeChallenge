@@ -6,18 +6,19 @@ import api from './services/api';
 
 import Form from './components/Form';
 import Result from './components/Result';
+import HistoryItem from './components/HistoryItem';
 
 function App() {
 
-  // const [results, setResults] = useState([{}]); // will be used for history
+  const [results, setResults] = useState([]);
   const [result, setResult] = useState({});
 
   async function handleFormSubmitted(data) {
     const num = Number(data.value_typed);
     const response = await api.get(`/number/${num}`);
-    // setResults([...results, response.data]);
+    setResults([...results, response.data]);
     setResult(response.data);
-    console.log(result);
+    console.log(results);
   }
 
   return(
@@ -29,10 +30,19 @@ function App() {
           <small>*números até 1000000</small>
           <Form onSubmit={handleFormSubmitted}/>
         </main>
-        <aside>
+        <aside className="result">
           <strong>Veja o resultado aqui:</strong>
           <Result res={result} />
         </aside>
+        <aside className="history">
+        <strong>Histórico:</strong>
+          <ul>
+            {results.map(res => (
+              <HistoryItem key={res.id} res={res} />
+            ))}
+          </ul>
+        </aside>
+
       </div>
     </>
   );
