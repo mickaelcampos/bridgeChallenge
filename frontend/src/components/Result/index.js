@@ -1,14 +1,15 @@
 import React from 'react';
+import StyledResult from './styles';
+
 
 export default function Result({ res }) {
 
   function renderResult() {
     return (
-      <>
-        <h1>Resultado</h1>
-        <strong>{(res.isPrime) ? 'é Primo' : 'nao é Primo'}</strong>
-        <p>Divisores: {res.divisors.join(', ')}</p>
-      </>
+      <StyledResult>
+        <strong>{(res.isPrime) ? 'É Primo!' : 'Não é Primo!'}</strong>
+        <p><strong>Divisores:</strong>{res.divisors.join(', ')}</p>
+      </StyledResult>
     )
   }
 

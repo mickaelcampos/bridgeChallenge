@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+
+import GlobalStyle from './styles/global';
+
 import api from './services/api';
 
 import Form from './components/Form';
@@ -18,14 +21,20 @@ function App() {
   }
 
   return(
-    <div id="app">
-      <main>
-        <Form onSubmit={handleFormSubmitted}/>
-      </main>
-      <aside>
-        <Result res={result} />
-      </aside>
-    </div>
+    <>
+      <GlobalStyle />
+      <div id="app">
+        <main>
+          <strong>Verifique se o número digitado é primo e seus divisores :)</strong>
+          <small>*números até 1000000</small>
+          <Form onSubmit={handleFormSubmitted}/>
+        </main>
+        <aside>
+          <strong>Veja o resultado aqui:</strong>
+          <Result res={result} />
+        </aside>
+      </div>
+    </>
   );
 }
 
