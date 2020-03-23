@@ -8,19 +8,23 @@ function App() {
 
   const [results, setResults] = useState([]);
 
-  useEffect(() => {
-    async function loadResults() {
-      const response = await api.get('/number');
-      setResults(response.data);
-    }
+  // useEffect(() => {
+  //   async function loadResults() {
+  //     const response = await api.get('/number');
+  //     setResults(response.data);
+  //   }
 
-    loadResults();
-  }, []);
+  //   loadResults();
+  // }, []);
 
 
 
   async function handleFormSubmitted(data) {
-    const response = await api.get('/number', data);
+    //const response = await api.get('/number/:value', data);
+    const number = Number(data.value_typed);
+    console.log(number);
+    const response = await api.get(`/number/${number}`);
+    console.log(response);
     setResults([...results, response.data]);
   }
 

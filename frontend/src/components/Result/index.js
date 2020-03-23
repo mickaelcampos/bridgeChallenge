@@ -6,7 +6,7 @@ export default function Result({ res }) {
     return (
       <>
         <strong>{(res.isPrime) ? 'ehPrimo' : 'naoEhPrimo'}</strong>
-        <p>{res.divisors.join(', ')}</p>
+        {/* <p>{res.divisors.join(', ')}</p> */}
       </>
     )
   }
