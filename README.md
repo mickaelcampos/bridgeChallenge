@@ -44,7 +44,7 @@ Dentro do diretório **frontend**, crie o arquivo **.env** e adicione o seguinte
 
 ```
 REACT_APP_API_URL=http://localhost:5000
-
+```
 
 **A PORTA SETADA NO BACKEND DEVE SER A MESMA NO FRONTEND**
 
