@@ -54,5 +54,4 @@ Quando as instalações forem concluídas, digite o comando:
 
 tanto no diretório **backend** como no diretório **frontend**.
 
-A aplicação estará disponível no browser em `localhost:porta`
-(porta definida no arquivo .env)
+A aplicação estará disponível no browser em `localhost:3000`
