@@ -2,7 +2,7 @@
 
 ## Tecnologias utilizadas
 
-  - ESLint (Pradronizar e validar o código durante o desenvolvimento);
+  - ESLint (Padronizar e validar o código durante o desenvolvimento);
   - Prettier (Formatador);
 
 **Backend**
@@ -15,7 +15,7 @@
   Template criado utilizando `create-react-app` CLI
   - React;
   - Axios (cliente HTTP);
-  - Styled-Componets: lib que permite escrever códigos CSS dentro do JavaScript,
+  - Styled-Components: lib que permite escrever códigos CSS dentro do JavaScript,
     cada componente conhece apenas o seu CSS, uma mudança em um componente será 
     refletida somente nele.
 
@@ -34,7 +34,7 @@ PORT=5000
 
 ```
 
-Depois entre no diretório **fronted** e digite:
+Depois entre no diretório **frontend** e digite:
 
 `yarn install`
 
