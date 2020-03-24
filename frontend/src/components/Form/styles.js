@@ -25,7 +25,6 @@ const StyledForm = styled.form`
 
   }
 
-
   button[type=submit] {
     width: 100%;
     border: 0;

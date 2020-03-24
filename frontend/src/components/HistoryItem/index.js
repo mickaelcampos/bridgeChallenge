@@ -1,7 +1,6 @@
 import React from 'react';
 import StyledHistoryItem from './styles';
 
-
 export default function HistoryItem({ res }) {
 
   return (

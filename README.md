@@ -40,6 +40,13 @@ Depois entre no diretório **frontend** e digite:
 
 para instalar os pacotes JavaScript utilizados na aplicação.
 
+Dentro do diretório **frontend**, crie o arquivo **.env** e adicione o seguinte conteúdo:
+
+```
+REACT_APP_API_URL=http://localhost:5000
+
+
+**A PORTA SETADA NO BACKEND DEVE SER A MESMA NO FRONTEND**
 
 Quando as instalações forem concluídas, digite o comando:
 

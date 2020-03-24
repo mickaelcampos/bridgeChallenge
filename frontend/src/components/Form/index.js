@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import StyledForm from './styles';
 
-
 export default function Form({ onSubmit }) {
 
   const [value_typed, setValueTyped] = useState('');
@@ -12,8 +11,6 @@ export default function Form({ onSubmit }) {
     await onSubmit({
       value_typed
     })
-
-    // setValueTyped(0);
   }
 
   return (

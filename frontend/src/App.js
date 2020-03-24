@@ -18,7 +18,6 @@ function App() {
     const response = await api.get(`/number/${num}`);
     setResults([...results, response.data]);
     setResult(response.data);
-    console.log(results);
   }
 
   return(
